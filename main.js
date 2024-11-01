@@ -28,6 +28,7 @@ async function recognize(base64, lang, options) {
 
     const body = {
         model,
+        stream: false,
         messages: [
             {
                 "role": "system",
